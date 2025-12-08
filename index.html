@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Favicon2.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/stylle.css" />
+
+    <title>tecboard</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./img/LogoBranco.png"
+        alt="logo tecboard na cor branca "
+        class="logo"
+      />
+    </header>
+    <main>
+      <section>
+        <h1 class="titulo cor-branca">
+          <span class="parteh1_color">Fique de olho</span><br />
+          no que importa
+        </h1>
+        <p class="paragrafo cor-branca">
+          Monitoramento em tempo real com alertas inteligentes para sua
+          aplicação nunca sair do ar sem você saber.
+        </p>
+        <a href="#" class="btn cor-branca">Testar versão demo</a>
+        <img
+          src="./img/celulares.png"
+          alt="2 celulares pretos, com uma sombra roxa de fundo "
+          class="celular_fundo"
+        />
+      </section>
+    </main>
+
+    <!--esse script dessa pg e fora do curso.. apenas teste, sera arrumado mais para frente com as novas aulas se usar esse mesmi index-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal(".titulo", {
+        duration: 1000, // tempo da animação
+        distance: "50px", // deslocamento
+        origin: "bottom", // de onde vem (top, bottom, left, right)
+        reset: true, // anima sempre que rolar a página
+        delay: 50, // meio segundo
+      });
+      ScrollReveal().reveal(".paragrafo", {
+        duration: 1000,
+        distance: "50px",
+        origin: "left",
+        reset: true,
+        delay: 100,
+      });
+
+      ScrollReveal().reveal(".logo", {
+        duration: 1000,
+        distance: "50px",
+        origin: "left",
+        reset: true,
+        delay: 200,
+      });
+
+      ScrollReveal().reveal(".btn", {
+        duration: 1000,
+        distance: "50px",
+        origin: "bottom",
+        reset: true,
+        delay: 100,
+      });
+
+      ScrollReveal().reveal(".celular_fundo", {
+        duration: 1000,
+        distance: "50px",
+        origin: "bottom",
+        reset: true,
+        delay: 100,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Unbounded";
+  src: url(../fonts/Unbounded-ExtraBold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0e1014;
+}
+
+.cor-branca {
+  color: #ffffff;
+}
+.parteh1_color {
+  color: #9747ff;
+}
+.titulo {
+  font-size: 50px;
+  font-family: "Unbounded", sans-serif;
+  text-align: center;
+  margin-top: 58px;
+}
+.paragrafo {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 24px auto 0;
+  width: 792px;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  background-color: #9747ff;
+  width: 240px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  line-height: 50px; /* para alinhar o <a/> no centro do button, tem que ter a medida do heigth*/
+  border-radius: 36px;
+  margin: 40px auto;
+}
+a:hover {
+  background-color: #8233e8;
+}
+.celular_fundo {
+  display: block;
+  width: 792px;
+  height: 446px;
+  margin: 0 auto;
+}
+.logo {
+  display: block; /*faz o elemento ocupar a largura inteira da linha, quebrando para a linha de baixo.
+Ele também permite ajustar width, height, margin, padding normalmente*/
+  margin: 50px 0 0 80px;
+}
+
+@media (max-width: 768px) {
+  header img {
+    margin: 65px 0 0 60px;
+  }
+
+  .paragrafo {
+    width: 648px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo {
+    margin: 32px 0px 0px 16px;
+  }
+  .titulo {
+    font-size: 40px;
+  }
+  .paragrafo {
+    width: 341px;
+    font-size: 20px;
+  }
+
+  .celular_fundo {
+    width: 341px;
+    height: 230px;
+  }
+}
